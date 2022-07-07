@@ -69,11 +69,17 @@ class Pet {
   }
 }
 //   - Create a method called formatProperties that prints all object properties using string templating.
-function formatProperties(){
-  
+
+function formatProperties(petArgument){
+// let format = JSON.stringify(petArgument);
+// }
+// console.log(formatProperties(Pet.constructor));
 }
+
  //   - Create a method called changeAge that takes a number and updates the age property of an object. 
- pet1.age 
+ 
+ //pet1.age 
+ 
  //   - Create a method called dogYears that checks if the pet type of the object is dog, if so return the age in dog years (age times 7), otherwise return the message "[PET TYPE] is not a dog!". 
 
 //   - Create an instance of the Pet Class called pet1. 
@@ -82,12 +88,15 @@ let pet1 = new Pet ('dog', 'border collie mix', 11);
  console.log(petsArray);
  //   - Create another instance of the Pet Class with diffrent property values called pet2.
 let pet2 = new Pet('hamster', 'winter white dwarf', 1);
+
  //   - Print all property values of the object using the class method.
 console.log(petsArray)
 //   - Change the age grade of pet1. 
 
-//   - Print the age of pet1 in dog years using the class method. 
-console.log(pet1.age); //change this
+//   - Print the age of pet1 in dog years using the class method.
+
+//console.log(pet1.age); //change this
+
 //   - Print the age of pet2 in dog years using the class method
 
   // Problem 4:

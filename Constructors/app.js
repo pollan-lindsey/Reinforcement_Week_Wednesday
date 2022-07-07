@@ -7,7 +7,14 @@
 
 function makeDoge(){
   // Write your code here
-
+class Dog{
+  constructor(name, breed, color, gender){
+    this.name = name;
+    this.breed = breed;
+    this.color = color;
+    this.gender = gender;
+  }
+}
 
   let newDog = new Dog('Fiddo', 'Lab', 'brown', 'male');
   alert(newDog.name); 
@@ -32,6 +39,13 @@ makeDoge();
 function makeTodo(){
 
   // write code here
+  class ToDo{
+    constructor(name, dueDate, list){
+      this.name = name;
+      this.dueDate = dueDate;
+      this.list = list;
+    }
+  }
 
   let newToDoList = new ToDo('Kenn', 'Next Week', ['Do the dishes', 'Wash your clothes']);
   alert(newToDoList.list);
@@ -48,6 +62,15 @@ makeTodo();
 // create a method, 'speak' that when called, alerts the user of the following 'Hello, my name is person.name!'
 function makePerson(){
 // wirte code here
+class Person{
+  constructor(name, species){
+    this.name = name;
+    this.species = species;
+  }
+  speak(){
+    return(`Hello, my name is ${this.name}`)
+}
+}
 
   let Person1 = new Person('Diego', 'Homo Sapiens');
 

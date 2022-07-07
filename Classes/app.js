@@ -13,29 +13,82 @@ const main = () => {
   //   The class should have a method that prints a product's information in the following format:
   //    Banana, price 1.1, amount 13.
   //     Create two instances of the class and call the method created to print the product's details.
+const productsArray = []
+class Product{
+  constructor(productName, price, amount){
+    this.productName = productName;
+    this.price = price;
+    this.amount = amount;
 
+    productsArray.push(this)
+  } 
+}
+let productOne = new Product('banana', 1.1, 13); 
+let productTwo = new Product('rice cakes', 2.3, 12); 
 
+//console.log(productsArray);
 
   // Problem 2:
   // Create a GitHubRepository class with properties: userName, fileName, descriptionOfRepository, and code. 
   // Create a function that prints all properties.
   // Create an instance of the class and use the function.
+  class GitHubRepository{
+    constructor(userName, fileName, descriptionOfRepository, code){
+      this.userName = userName;
+      this.fileName = fileName;
+      this.descriptionOfRepository = descriptionOfRepository;
+      this.code = code
+    }
+  }
 
+  let repo = new GitHubRepository('lpollan', 'reinforcement-week', 'Wednesday of reinforcement week', 2);
+
+//console.log(repo);
 
   //   Problem 3:
-  //   - Define a class called Pet with three properties: type, breed and age.
-  //   - Create a method called formatProperties that prints all object properties using string templating.
-  //   - Create a method called changeAge that takes a number and updates the age property of an object. 
-  //   - Create a method called dogYears that checks if the pet type of the object is dog, if so return the age in dog years (age times 7), otherwise return the message "[PET TYPE] is not a dog!". 
-  //   - Create an instance of the Pet Class called pet1. 
-  //   - Print all property values of the object using the class method.
-  //   - Create another instance of the Pet Class with diffrent property values called pet2.
-  //   - Print all property values of the object using the class method. 
-  //   - Change the age grade of pet1. 
-  //   - Print the age of pet1 in dog years using the class method. 
-  //   - Print the age of pet2 in dog years using the class method
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+  
+  
+const petsArray = [];
+//   - Define a class called Pet with three properties: type, breed and age.
+class Pet {
+  constructor(type, breed, age){
+    this.type = type;
+    this.breed = breed;
+    this.age = age;
 
+    petsArray.push(this)
+  }
+}
+//   - Create a method called formatProperties that prints all object properties using string templating.
+function formatProperties(){
+  
+}
+ //   - Create a method called changeAge that takes a number and updates the age property of an object. 
+ pet1.age 
+ //   - Create a method called dogYears that checks if the pet type of the object is dog, if so return the age in dog years (age times 7), otherwise return the message "[PET TYPE] is not a dog!". 
 
+//   - Create an instance of the Pet Class called pet1. 
+let pet1 = new Pet ('dog', 'border collie mix', 11);
+ //   - Print all property values of the object using the class method.
+ console.log(petsArray);
+ //   - Create another instance of the Pet Class with diffrent property values called pet2.
+let pet2 = new Pet('hamster', 'winter white dwarf', 1);
+ //   - Print all property values of the object using the class method.
+console.log(petsArray)
+//   - Change the age grade of pet1. 
+
+//   - Print the age of pet1 in dog years using the class method. 
+console.log(pet1.age); //change this
+//   - Print the age of pet2 in dog years using the class method
 
   // Problem 4:
 

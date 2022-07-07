@@ -34,7 +34,7 @@ function makeTodo(){
   // write code here
 
   let newToDoList = new ToDo('Kenn', 'Next Week', ['Do the dishes', 'Wash your clothes']);
-  print(newToDoList.list);
+  alert(newToDoList.list);
 }
 
 makeTodo();
